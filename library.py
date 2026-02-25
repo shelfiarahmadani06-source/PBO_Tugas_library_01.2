@@ -24,7 +24,7 @@ class Member:
 class Staff:
     def __init__(self, name, staff_id):
         self.name = name
-        self.staff_ic = staff_id
+        self.staff_id = staff_id
 
 class borrowTransaction:
     def __init__(self, book: Book, member: Member, staff: Staff):
@@ -42,4 +42,5 @@ class borrowTransaction:
     
     def return_book(self):
         self.book.return_book()
+
         self.returned = True
